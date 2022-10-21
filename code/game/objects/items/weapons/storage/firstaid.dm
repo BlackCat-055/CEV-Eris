@@ -139,6 +139,66 @@
 	new /obj/item/storage/pill_bottle/tramadol(src)
 	new /obj/item/storage/pill_bottle/spaceacillin(src)
 
+/obj/item/storage/firstaid/njoy/cherry
+	name = "Cherry-Flavored Njoy™ Packet"
+	desc = "Contains your medication package of Njoy™ bottled pills. Now in cherry flavor"
+	icon_state = "packet_njoy_red"
+	item_state = "packet_njoy_red"
+	rarity_value = 100
+	initial_amount = 1
+	spawn_type = /obj/item/storage/pill_bottle/njoy
+
+/obj/item/storage/firstaid/combat/populate_contents()
+	if (empty) return
+	for(var/i in 1 to initial_amount)
+		new spawn_type(src)
+	new /obj/item/storage/pill_bottle/njoy/cherry(src)
+	new /obj/item/storage/pill_bottle/njoy/cherry(src)
+	new /obj/item/storage/pill_bottle/njoy/cherry(src)
+	new /obj/item/storage/pill_bottle/njoy/cherry(src)
+	new /obj/item/storage/pill_bottle/njoy/cherry(src)
+	new /obj/item/storage/pill_bottle/njoy/cherry(src)
+
+/obj/item/storage/firstaid/njoy/blueberry
+	name = "Blueberry-Flavored Njoy™ Packet"
+	desc = "Contains your medication package of Njoy™ bottled pills. Now in Blueberry flavor"
+	icon_state = "packet_njoy_blue"
+	item_state = "packet_njoy_blue"
+	rarity_value = 100
+	initial_amount = 1
+	spawn_type = /obj/item/storage/pill_bottle/njoy
+
+/obj/item/storage/firstaid/combat/populate_contents()
+	if (empty) return
+	for(var/i in 1 to initial_amount)
+		new spawn_type(src)
+	new /obj/item/storage/pill_bottle/njoy/blueberry(src)
+	new /obj/item/storage/pill_bottle/njoy/blueberry(src)
+	new /obj/item/storage/pill_bottle/njoy/blueberry(src)
+	new /obj/item/storage/pill_bottle/njoy/blueberry(src)
+	new /obj/item/storage/pill_bottle/njoy/blueberry(src)
+	new /obj/item/storage/pill_bottle/njoy/blueberry(src)
+
+/obj/item/storage/firstaid/njoy/lime
+	name = "Lime-flavored Njoy™ Packet"
+	desc = "Contains your medication package of Njoy™ bottled pills. Now in Lime flavor"
+	icon_state = "packet_njoy_green"
+	item_state = "packet_njoy_green"
+	rarity_value = 100
+	initial_amount = 1
+	spawn_type = /obj/item/storage/pill_bottle/njoy
+
+/obj/item/storage/firstaid/combat/populate_contents()
+	if (empty) return
+	for(var/i in 1 to initial_amount)
+		new spawn_type(src)
+	new /obj/item/storage/pill_bottle/njoy/lime(src)
+	new /obj/item/storage/pill_bottle/njoy/lime(src)
+	new /obj/item/storage/pill_bottle/njoy/lime(src)
+	new /obj/item/storage/pill_bottle/njoy/lime(src)
+	new /obj/item/storage/pill_bottle/njoy/lime(src)
+	new /obj/item/storage/pill_bottle/njoy/lime(src)
+
 /obj/item/storage/firstaid/surgery
 	name = "surgery kit"
 	desc = "Contains tools for surgery. Has precise foam fitting for safe transport."
@@ -332,12 +392,33 @@
 	for(var/i in 1 to initial_amt)
 		new pill_type(src)
 
-/obj/item/storage/pill_bottle/njoy
+/obj/item/storage/pill_bottle/njoy/cherry
 	name = "bottle of Njoy™ pills"
 	desc = "Contains pills used to improve a patient's mood in exchange for less insight."
-	pill_type = /obj/item/reagent_containers/pill/njoy
+	icon_state = "bottle_njoy_red"
+	pill_type = /obj/item/reagent_containers/pill/njoy/cherry
 
-/obj/item/storage/pill_bottle/njoy/populate_contents()
+/obj/item/storage/pill_bottle/njoy/cherry/populate_contents()
+	for(var/i in 1 to initial_amt)
+		new pill_type(src)
+
+/obj/item/storage/pill_bottle/njoy/blueberry
+	name = "bottle of Njoy™ pills"
+	desc = "Contains pills used to improve a patient's mood in exchange for less insight."
+	icon_state = "bottle_njoy_blue"
+	pill_type = /obj/item/reagent_containers/pill/njoy/blueberry
+
+/obj/item/storage/pill_bottle/njoy/blueberry/populate_contents()
+	for(var/i in 1 to initial_amt)
+		new pill_type(src)
+
+/obj/item/storage/pill_bottle/njoy/lime
+	name = "bottle of Njoy™ pills"
+	desc = "Contains pills used to improve a patient's mood in exchange for less insight."
+	icon_state = "bottle_njoy_green"
+	pill_type = /obj/item/reagent_containers/pill/njoy/lime
+
+/obj/item/storage/pill_bottle/njoy/lime/populate_contents()
 	for(var/i in 1 to initial_amt)
 		new pill_type(src)
 

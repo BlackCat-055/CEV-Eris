@@ -581,7 +581,8 @@
 
 /datum/chemical_reaction/njoy
 	result = "njoy"
-	required_reagents = list("citalopram" = 1, "carbon" = 1, "pararein" =1)
+	required_reagents = list("citalopram" = 1, "blood" = 1)
+	catalysts = list("plasma" = 5)
 	result_amount = 2
 
 /datum/chemical_reaction/paroxetine

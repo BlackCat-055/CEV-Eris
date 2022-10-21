@@ -133,11 +133,24 @@
 	icon_state = "pill8"
 	preloaded_reagents = list("citalopram" = 15)
 
-/obj/item/reagent_containers/pill/njoy
-	name = "Njoy™ pill"
+/obj/item/reagent_containers/pill/njoy/cherry
+	name = "Cherry-Flavored Njoy™ pill"
 	desc = "A Moebius-Patented anti-depressent."
-	icon_state = "pill8"
-	preloaded_reagents = list("njoy" = 15)
+	icon_state = "pill_njoy_red"
+	preloaded_reagents = list("njoy" = 15, "cherryjelly" = 5)
+
+/obj/item/reagent_containers/pill/njoy/blueberry
+	name = "Blueberry-Flavored Njoy™ pill"
+	desc = "A Moebius-Patented anti-depressent."
+	icon_state = "pill_njoy_blue"
+	preloaded_reagents = list("njoy" = 15, "berryjuice" = 5)
+
+/obj/item/reagent_containers/pill/njoy/lime
+	name = "Lime-flavored Njoy™ pill"
+	desc = "A Moebius-Patented anti-depressent."
+	icon_state = "pill_njoy_green"
+	preloaded_reagents = list("njoy" = 15, "limejuice" = 5)
+
 
 /obj/item/reagent_containers/pill/inaprovaline
 	name = "Inaprovaline pill"
