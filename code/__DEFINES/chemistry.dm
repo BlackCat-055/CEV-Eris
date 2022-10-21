@@ -43,6 +43,7 @@
 #define CE_ALCOHOL "alcohol" // Liver filtering
 #define CE_ALCOHOL_TOXIC "alcotoxic" // Liver damage
 #define CE_SPEEDBOOST "gofast" // Hyperzine
+#define CE_INSIGHT "insightchanging" // can either boost Insight or FUCK UP Insight, currently as of writing, used for Njoy only (no the N is not what you think)
 #define CE_PULSE      "xcardic" // increases or decreases heart rate
 #define CE_NOPULSE    "heartstop" // stops heartbeat
 #define CE_MIND    		 "mindbending"  // Stabilizes or wrecks mind. Used for hallucinations
@@ -52,7 +53,7 @@
 #define CE_BLOODCLOT 	"bloodclot"	// Promote healing but thickens blood, slows and stops bleeding (range 0 - 1)
 #define CE_OXYGENATED    "oxygen"       // Dexalin.
 #define CE_PURGER "purger"	//Purger
-#define CE_NOWITHDRAW "no_withdrawal" 
+#define CE_NOWITHDRAW "no_withdrawal"
 #define CE_VOICEMIMIC "voice_mimic"
 #define CE_DYNAMICFINGERS "dynfingers"
 

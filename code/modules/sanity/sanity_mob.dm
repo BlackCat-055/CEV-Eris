@@ -80,6 +80,8 @@
 
 	var/eat_time_message = 0
 
+	var/list/chem_effects = list()
+
 	var/life_tick_modifier = 2	//How often is the onLife() triggered and by how much are the effects multiplied
 
 /datum/sanity/New(mob/living/carbon/human/H)
@@ -92,7 +94,7 @@
 /datum/sanity/proc/give_insight(value)
 	var/new_value = value
 	if(value > 0)
-		new_value = max(0, value * insight_gain_multiplier)
+		new_value = max(0, value * insight_gain_multiplier * chem_effects[CE_INSIGHT])
 	insight = min(insight + new_value, max_insight)
 
 /datum/sanity/proc/give_resting(value)

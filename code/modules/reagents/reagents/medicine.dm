@@ -574,6 +574,32 @@
 			data = world.time
 			to_chat(M, SPAN_NOTICE("Your mind feels stable... a little stable."))
 
+/datum/reagent/medicine/njoy
+	name = "Njoy™"
+	id = "njoy"
+	description = "A patented Moebius designer drug. Gauranteed to heal your mind and stabilize it from breakdowns, in exchange for lower insight gain."
+	taste_description = "sweet"
+	reagent_state = LIQUID
+	color = "#ff008c"
+	metabolism = 0.1
+	data = 0
+	sanity_gain = 1.5
+	overdose = REAGENTS_OVERDOSE
+	addiction_chance = 100
+
+
+/datum/reagent/medicine/njoy/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	if(volume <= 0.1 && data != -1)
+		data = -1
+		to_chat(M, SPAN_WARNING("Your mind feels less stable yet more coherent"))
+	else
+		M.add_chemical_effect(CE_MIND, 1.5)
+		M.add_chemical_effect(CE_INSIGHT, 0.5)
+		if(world.time > data + ANTIDEPRESSANT_MESSAGE_DELAY)
+			data = world.time
+			to_chat(M, SPAN_NOTICE("Your mind feels stable... but less coherent."))
+
+
 /datum/reagent/medicine/paroxetine
 	name = "Paroxetine"
 	id = "paroxetine"

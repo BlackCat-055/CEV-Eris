@@ -332,6 +332,15 @@
 	for(var/i in 1 to initial_amt)
 		new pill_type(src)
 
+/obj/item/storage/pill_bottle/njoy
+	name = "bottle of Njoy™ pills"
+	desc = "Contains pills used to improve a patient's mood in exchange for less insight."
+	pill_type = /obj/item/reagent_containers/pill/njoy
+
+/obj/item/storage/pill_bottle/njoy/populate_contents()
+	for(var/i in 1 to initial_amt)
+		new pill_type(src)
+
 /obj/item/storage/pill_bottle/prosurgeon
 	name = "bottle of ProSurgeon pills"
 	desc = "Contains pills used to reduce hand tremor."

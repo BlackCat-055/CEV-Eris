@@ -133,6 +133,11 @@
 	icon_state = "pill8"
 	preloaded_reagents = list("citalopram" = 15)
 
+/obj/item/reagent_containers/pill/njoy
+	name = "Njoy™ pill"
+	desc = "A Moebius-Patented anti-depressent."
+	icon_state = "pill8"
+	preloaded_reagents = list("njoy" = 15)
 
 /obj/item/reagent_containers/pill/inaprovaline
 	name = "Inaprovaline pill"

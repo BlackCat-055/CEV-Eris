@@ -579,6 +579,10 @@
 	required_reagents = list("mindbreaker" = 1, "carbon" = 1)
 	result_amount = 3
 
+/datum/chemical_reaction/njoy
+	result = "njoy"
+	required_reagents = list("citalopram" = 1, "carbon" = 1, "pararein" =1)
+	result_amount = 2
 
 /datum/chemical_reaction/paroxetine
 	result = "paroxetine"
