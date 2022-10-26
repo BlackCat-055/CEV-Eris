@@ -574,14 +574,14 @@
 			data = world.time
 			to_chat(M, SPAN_NOTICE("Your mind feels stable... a little stable."))
 
-/datum/reagent/medicine/njoy
-	name = "Njoy™"
+/datum/reagent/medicine/supressital
+	name = "Supressital"
 	id = "njoy"
-	description = "A patented Moebius designer drug. Gauranteed to heal your mind and stabilize it from breakdowns, in exchange for lower insight gain."
+	description = "The core chemical used to produce the Moebius-Patended Drug Njoy™. A mind-stability and mood enhancer drug"
 	taste_description = "sweet"
 	reagent_state = LIQUID
 	color = "#ff008c"
-	metabolism = 0.1
+	metabolism = 0.02
 	data = 0
 	sanity_gain = 1.5
 	overdose = REAGENTS_OVERDOSE
