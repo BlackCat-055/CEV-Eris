@@ -89601,7 +89601,7 @@
 "egH" = (
 /obj/machinery/door/airlock/research{
 	name = "Xenoflora Storage";
-	req_one_access = list(55, 66)
+	req_one_access = list(55,66)
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
@@ -99569,6 +99569,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/item/storage/firstaid/njoy/blueberry,
 /turf/simulated/floor/plating/under,
 /area/eris/medical/chemstor)
 "eDI" = (
@@ -107455,6 +107456,9 @@
 	},
 /obj/structure/closet/secure_closet/personal/patient,
 /obj/item/storage/pill_bottle/citalopram,
+/obj/item/storage/firstaid/njoy/lime,
+/obj/item/storage/firstaid/njoy/cherry,
+/obj/item/storage/firstaid/njoy/blueberry,
 /turf/simulated/floor/wood,
 /area/eris/medical/psych)
 "uwE" = (
@@ -108405,6 +108409,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/closet/secure_closet/medicine,
+/obj/item/storage/firstaid/njoy/lime,
 /turf/simulated/floor/plating/under,
 /area/eris/medical/chemstor)
 "wOZ" = (
@@ -108444,6 +108449,7 @@
 	dir = 1
 	},
 /obj/structure/catwalk,
+/obj/item/storage/firstaid/njoy/cherry,
 /turf/simulated/floor/plating/under,
 /area/eris/medical/chemstor)
 "wXM" = (

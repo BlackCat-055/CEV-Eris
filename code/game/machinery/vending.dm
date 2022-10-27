@@ -1176,7 +1176,7 @@
 					/obj/item/reagent_containers/glass/bottle/stoxin = 4,/obj/item/reagent_containers/glass/bottle/toxin = 4,
 					/obj/item/reagent_containers/syringe/spaceacillin = 8,/obj/item/reagent_containers/syringe = 12,
 					/obj/item/device/scanner/health = 5,/obj/item/reagent_containers/glass/beaker = 4, /obj/item/reagent_containers/dropper = 2,
-					/obj/item/stack/medical/advanced/bruise_pack = 3, /obj/item/stack/medical/advanced/ointment = 3, /obj/item/stack/medical/splint = 6, /obj/item/bodybag/cryobag = 2)
+					/obj/item/stack/medical/advanced/bruise_pack = 3, /obj/item/stack/medical/advanced/ointment = 3, /obj/item/stack/medical/splint = 6, /obj/item/bodybag/cryobag = 2, /obj/item/storage/pill_bottle/njoy/cherry = 2, /obj/item/storage/pill_bottle/njoy/blueberry = 2, /obj/item/storage/pill_bottle/njoy/lime = 2)
 	contraband = list(/obj/item/reagent_containers/pill/tox = 3,/obj/item/reagent_containers/pill/stox = 4,/obj/item/reagent_containers/pill/antitox = 6)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 	auto_price = FALSE
@@ -1493,7 +1493,7 @@
 /obj/machinery/vending/theomat/proc/check_NT(mob/user)
 	var/bingo = FALSE
 	if(ishuman(user))
-	
+
 		var/mob/living/carbon/human/H = user
 
 		if(!scan_id)

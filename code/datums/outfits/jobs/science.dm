@@ -46,3 +46,4 @@
 	uniform = /obj/item/clothing/under/rank/psych
 	belt = /obj/item/storage/belt/medical
 	l_pocket = /obj/item/reagent_containers/glass/beaker/vial/psilocybin
+	r_pocket = /obj/item/storage/pill_bottle/njoy/random

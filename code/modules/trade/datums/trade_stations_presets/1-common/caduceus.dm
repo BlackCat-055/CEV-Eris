@@ -1,6 +1,6 @@
 /datum/trade_station/caduceus
 	name_pool = list(
-		"MAV \'Caduceus\'" = "Moebius Aid Vessel \'Caduceus\': \"Hello there, we are from the Old Sol Republic. We will be leaving the system shortly but we can offer you medical supplies in the meantime.\"."
+		"MAV \'Caduceus\'" = "Moebius Aid Vessel \'Caduceus\': \"Hello there, we are from the End Point. We will be leaving the system shortly but we can offer you medical supplies in the meantime.\"."
 	)
 	forced_overmap_zone = list(
 		list(20, 22),
@@ -31,7 +31,15 @@
 			/obj/item/storage/firstaid/adv = custom_good_price(600),
 			/obj/item/stack/medical/bruise_pack,
 			/obj/item/stack/medical/ointment,
-			/obj/item/stack/medical/splint
+			/obj/item/stack/medical/splint,
+			/obj/item/storage/firstaid/njoy/cherry = custom_good_price(1000),
+			/obj/item/storage/firstaid/njoy/blueberry = custom_good_price(1000),
+			/obj/item/storage/firstaid/njoy/lime = custom_good_price(1000),
+			/obj/item/storage/pill_bottle/njoy/cherry = custom_good_price(500),
+			/obj/item/storage/pill_bottle/njoy/blueberry = custom_good_price(500),
+			/obj/item/storage/pill_bottle/njoy/lime = custom_good_price(500)
+
+
 		),
 		"Surgery" = list(
 			/obj/item/tool/cautery,
